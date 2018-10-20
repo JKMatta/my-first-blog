@@ -1,12 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Mis Perris</title>
-	<link rel="stylesheet" href="img/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="{% static 'img/favicon.ico' %}">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{% static 'css/blog.css' %}">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<style>
     .carousel-inner > .item > img,
@@ -21,22 +22,22 @@
 		<input type="checkbox" name="checkbox" id="check-offcanvas">
 		<nav class="menu-pegajoso">
 			<div class="content-pegajoso">
-				<img src="img/logo.png" id="logo-tienda" alt="logo-tienda">
+				<img src="{% static 'img/logo.png' %}" id="logo-tienda" alt="logo-tienda">
 				<ul class="options-pegajoso">
 					<li><a href="#">NOSOTROS</a></li>
-					<li><a href="galeria.html">GALERÍA</a></li>
-					<li><a href="form.html">ADOPTA</a></li>
+					<li><a href="{% url 'galery' %}">GALERÍA</a></li>
+					<li><a href="#">ADOPTA</a></li>
 					<li><a href="#">CONTACTO</a></li>
 				</ul>
-				<label for="check-offcanvas"><img src="img/menu.svg" id="btn-offcanvas" alt="boton-menu"></label>
+				<label for="check-offcanvas"><img src="{% static 'img/menu.svg' %}" id="btn-offcanvas" alt="boton-menu"></label>
 			</div>
 		</nav>
 		<nav class="menu-offcanvas">
 			<div class="content-offcanvas">
 				<ul>
 					<li><a href="#" id="item1">NOSOTROS</a></li>
-					<li><a href="galeria.html" id="item2">GALERÍA</a></li>
-					<li><a href="form.html" id="item3">ADOPTA</a></li>
+					<li><a href="{% url 'galery' %}" id="item2">GALERÍA</a></li>
+					<li><a href="#" id="item3">ADOPTA</a></li>
 					<li><a href="#" id="item4">CONTACTO</a></li>
 				</ul>
 			</div>
@@ -44,7 +45,7 @@
 	</header>
 	<section>
 		<div class="container-fluid">
-			<div class="box-carrusel">
+						<div class="box-carrusel">
 				<div class="carrusel-boostrap">
 					<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					    <!-- Indicators -->
@@ -59,28 +60,28 @@
 					    <div class="carousel-inner" role="listbox">
 
 					      <div class="item active">
-					        <img src="img/perro-4.jpg" alt="perro 1" width="1920" height="1080">
+					        <img src="{% static 'img/perro-4.jpg' %}" alt="perro 1" width="1920" height="1080">
 					        <div class="carousel-caption">
 					          
 					        </div>
 					      </div>
 
 					      <div class="item">
-					        <img src="img/perro-2.jpg" alt="perro 2" width="1920" height="1080">
+					        <img src="{% static 'img/perro-2.jpg' %}" alt="perro 2" width="1920" height="1080">
 					        <div class="carousel-caption">
 					          
 					        </div>
 					      </div>
 					    
 					      <div class="item">
-					        <img src="img/perro-3.jpg" alt="Flower" width="1920" height="1080">
+					        <img src="{% static 'img/perro-3.jpg' %}" alt="Flower" width="1920" height="1080">
 					        <div class="carousel-caption">
 					          
 					        </div>
 					      </div>
 
 					      <div class="item">
-					        <img src="img/perro-1.jpg" alt="Flower" width="1920" height="1080">
+					        <img src="{% static 'img/perro-1.jpg' %}" alt="Flower" width="1920" height="1080">
 					        <div class="carousel-caption">
 					          
 					        </div>
@@ -96,7 +97,7 @@
 					      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 					      <span class="sr-only">Next</span>
 					    </a>
-					  </div>
+					</div>
 				</div>	
 			</div>
 			<div class="box-informacion">
@@ -126,7 +127,7 @@
 			        Nuestros valores hacen de MyPerris, un lugar centrado en la tenencia responsable de mascotas, por ello concebimos la medicina preventiva como mejor opción para evitar enfermedades, sufrimiento y gastos excesivos; la opinión y educación de nuestros clientes para mejorar el cuidado de sus animales; y la capacidad de establecer una relación cercana, cordial, cálida y personalizada.
 
 			        En MyPerris encontrará un espacio donde la salud y el bienestar de su mascota son lo más importante. Es por ello que nuestros locales están con atención profesional, expedita y especializada del más alto nivel, precios convenientes y en un entorno acogedor.
-			              </p>
+			      </p>
 			</div>
 		</div>
 	</section>

@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mis Perris</title>
+	<link rel="stylesheet" href="{% static 'img/favicon.ico' %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{% static 'css/galeria.css' %}">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<style>
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+    }
+    </style>
+</head>
+<body>
+	<header>
+		<input type="checkbox" name="checkbox" id="check-offcanvas">
+		<nav class="menu-pegajoso">
+			<div class="content-pegajoso">
+				<img src="{% static 'img/logo.png' %}" id="logo-tienda" alt="logo-tienda">
+				<ul class="options-pegajoso">
+					<li><a href="{% url 'post_list' %}">NOSOTROS</a></li>
+					<li><a href="#">GALERÍA</a></li>
+					<li><a href="#">ADOPTA</a></li>
+					<li><a href="#">CONTACTO</a></li>
+				</ul>
+				<label for="check-offcanvas"><img src="{% static 'img/menu.svg' %}" id="btn-offcanvas" alt="boton-menu"></label>
+			</div>
+		</nav>
+		<nav class="menu-offcanvas">
+			<div class="content-offcanvas">
+				<ul>
+					<li><a href="{% url 'post_list' %}" id="item1">NOSOTROS</a></li>
+					<li><a href="#" id="item2">GALERÍA</a></li>
+					<li><a href="#" id="item3">ADOPTA</a></li>
+					<li><a href="#" id="item4">CONTACTO</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<section>
+		<div class="container-fluid">
+			<div class="container">
+			  <h2>PERRIS EN ADOPCION</h2>
+			  <p> Perros más lindos y tiernos buscan un hogar.</p>
+			  <div class="row">
+			    <div class="col-md-4">
+			      <div class="thumbnail">
+			        <a href="{% static 'img/gal1.webp' %}" target="_blank">
+			          <img src="{% static 'img/gal1.webp' %}" alt="beagles" style="width:100%">
+			          <div class="caption">
+			          	<h5>#AB36S</h5>
+			          	<br>
+			            <h5>Ubicación</h5>
+			            <p>	
+							IV. Coquimbo,
+							Elqui,
+							La Serena
+						</p>
+						<br>
+						<h5>Descripción</h5>
+			            <p>Hermosos cachorritos beagle, son 4 machitos y 3 hembras, nacieron el 9 de septiembre y se entregan desde los 2 meses de vida, inscritos en el kennel club de Chile, microchipiados,con su declaración de origen, vacunados, desparasitados,su valor es de 280mil. Las reservas ya estan abiertas, cualquier duda llamar o enviar whatsap al 91415086 - 75646375
+						Criadero D Mandjeck
+						Enviamos a todo el país a través de latam, con cargo al comprador
+						</p>
+			          </div>
+			        </a>
+			      </div>
+			    </div>
+			    <div class="col-md-4">
+			      <div class="thumbnail">
+			        <a href="{% static 'img/gal2.webp' %}" target="_blank">
+			          <img src="{% static 'img/gal2.webp' %}" alt="Yorkshire" style="width:100%">
+			          <div class="caption">
+			          	<h5>#FJ47D</h5>
+			          	<br>
+			          	<h5>Ubicación</h5>
+			            <p>	Metropolitana,Cordillera
+							,Puente Alto
+						</p>
+						<br>
+						<h5>Descripción</h5>
+			            <p>Se venden cachorros Yorkshire toy, padres a la vista junto a hembrita (hermana) nacida de camada anterior, para conocer sus caracteristicas muy importante al momento de elegir y comprar, cachorros listos para entrega destetados, se entregan con sus vacunas, desparacitaciones al día junto a su carnet veterinario, el valor es $150.000, conversable, nos puede contactar a celular o (whatsapp) +569 54211637 o correo electronico benjamin_cathy@hotmail.com
+						</p>
+			          </div>
+			        </a>
+			      </div>
+			    </div>
+			    <div class="col-md-4">
+			      <div class="thumbnail">
+			        <a href="{% static 'img/gal3.webp' %}" target="_blank">
+			          <img src="{% static 'img/gal3.webp' %}" alt="Pastor Alemán" style="width:100%">
+			          <div class="caption">
+			          	<h5>#F8J3D</h5>
+			          	<br>
+			            <h5>Ubicación</h5>
+			            <p>	
+							IX. Araucanía,
+							Cautín,
+							Temuco
+						</p>
+						<br>
+						<h5>Descripción</h5>
+			            <p>$ 250.000.- Cachorro pastor aleman inscrito en Chilcoa, macho, 3 meses y medio. Con todas sus vacunas (2 sextuple y 1 octuple) y desparasitaciones
+						Ambos padres con radiografias de codos y cadera. Padre seleccionado.
+						Entrega inmediata. Facilidades de pago. Foto 5 Madre; foto 6 Padre
+						</p>
+			          </div>
+			        </a>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container-fluid">
+			<p>Copyright © 2018 MisPerris. Todos los derechos reservados.</p>
+		</div>
+	</footer>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
