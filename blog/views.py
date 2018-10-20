@@ -10,3 +10,6 @@ def galery(request):
 
 def form(request):
     return render(request, 'blog/form.html', {})
+
+def contact(request):
+    return render(request, 'blog/contact.html', {})
