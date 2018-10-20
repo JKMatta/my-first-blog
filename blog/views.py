@@ -7,3 +7,6 @@ def post_list(request):
 
 def galery(request):
     return render(request, 'blog/galery.html', {})
+
+def form(request):
+    return render(request, 'blog/form.html', {})
